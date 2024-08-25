@@ -1,0 +1,89 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+body{
+      width: 100%;
+      height: 100vh;
+      background-image: url(./bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.modal{
+      width: 220px;
+      padding: 12px;
+      border: 3px solid rgba(137, 43, 226, 0.626);
+      color: rgba(137, 43, 226, 0.626);
+      font-size: 18px;
+      font-weight: 600;
+      background-color: transparent;
+      border-radius: 0 50px 0 50px;
+      position: absolute;
+      top: 15%;
+      left: 20%;
+      transition: 0.3s;
+}
+.modal:hover{
+      cursor: pointer;
+      background-color: transparent;
+      transform: rotate(35deg);
+}
+.modal.active{
+      transition: 0.3s;
+}
+.obuna2.active{
+      transition: 0.3s;
+}
+.focus{
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.493);
+      transition: 1s;
+}
+.focus .focus-child{
+      width: 450px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      background-color: transparent;
+      border: 5px solid rgba(134, 12, 248, 0.553);
+      padding: 10px;
+      position: absolute;
+      top: 40%;
+      left: 40%;
+}
+.focus-child h1{
+      color: rgba(134, 13, 248, 0.726);
+      font-size: 18px;
+      max-width: 400px;
+}
+.focus-child .obuna{
+      width: 200px;
+      padding: 12px;
+      font-size: 18px;
+      border: 3px solid rgba(134, 12, 248, 0.553);
+      border-radius: 10px;
+      color: rgba(134, 12, 248, 0.553);
+      background-color: transparent;
+}
+.focus-child .obuna2{
+      width: 200px;
+      padding: 12px;
+      font-size: 18px;
+      border: 3px solid rgba(134, 12, 248, 0.553);
+      border-radius: 10px;
+      color: rgba(134, 12, 248, 0.553);
+      background-color: transparent;
+}
+.focus-child div{
+      width: 100%;
+      display: flex;
+      gap: 5px;
+}
+.hidden{
+      display: none;
+}
+.active{
+      display: none;
+}
